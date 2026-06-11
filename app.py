@@ -3,7 +3,7 @@ from openai import OpenAI
 
 app = Flask(__name__)
 
-client = OpenAI(api_key="YOUR_API_KEY")
+client = OpenAI(api_key="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")
 
 def ask_ai(prompt):
     response = client.chat.completions.create(
